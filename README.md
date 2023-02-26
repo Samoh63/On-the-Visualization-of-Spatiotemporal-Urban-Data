@@ -26,6 +26,7 @@ To implement sun rising and sun setting for `Alesund`, a `directional lighting` 
 <img src="./Images/Untitled.png">
 </p>
 In this part, the Cartesian coordinate of sun can be calculated as
+
 $$ X = R \ . \ Cos ( Elevation) \ . \ Sin(Azimuth) $$
 
 $$ Y = R \ . \ Sin \ (Elevation) $$
