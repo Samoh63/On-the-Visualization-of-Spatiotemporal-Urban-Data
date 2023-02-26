@@ -9,9 +9,9 @@ $$ intensity \propto \frac{1}{distance^2} $$
 It can also be mathematically expressed as:
 $$ \frac{intensity_1}{intensity_2} = \frac{distance_1^2}{distance_2^2} $$
 To show this property, imagine a point light, like `S` in Fig. 1, while `r` represents the measured points. The lines represent the flux emitting from the sources and fluxes. The total number of flux lines depends on the strength of the light source and is constant with increasing distance, where a greater density of flux lines (lines per unit area) means a stronger energy field. The density of flux lines is inversely proportional to the square of the distance from the source because the surface area of a sphere increases with the square of the radius. Thus, the intensity of light from a point source (energy per unit of area perpendicular to the source) is inversely proportional to the square of the distance from the source, so an object twice as far away receives only one-quarter the energy (in the same time period).
-
-<img align="center" src="./Images/pointLight.png">
-
+<p align="center">
+<img  src="./Images/pointLight.png">
+</p>
 However, in computer graphics things are a little problem. As distance approaches zero, lighting intensity approaches infinity. To address this issue,there are several way but `Standard Unity rendering pipeline` uses a `fake falloff curve` derived from the following equation:
 $$ \frac{1}{((\frac{x}{r}) . 5)^2 + 1 } $$
 which `r` is `Range parameter`. It does in fact resemble the inverse square curve, except fixed at distance of 5 and then scaled based on Range parameter.
