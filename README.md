@@ -1,4 +1,4 @@
-# On-the-Visualization-of-Spatiotemporal-Urban-Data
+# On the Visualization of Spatiotemporal Urban Data
 
 ## Theory
 
