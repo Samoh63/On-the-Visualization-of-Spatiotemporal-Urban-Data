@@ -7,21 +7,9 @@ In science, an inverse-square law is any scientific law stating that a specified
 $$ intensity \propto \frac{1}{distance^2} $$
 
 It can also be mathematically expressed as:
-\begin{equation}
-    \frac{intensity_1}{intensity_2} = \frac{distance_1^2}{distance_2^2} 
-\end{equation}
-% In real world, lighting attenuation is governed by the inverse-square law: 
-% \begin{equation}
-%     \frac{1}{x . x} 
-% \end{equation}
-To show this property, imagine a point light, like \texttt{S} in Fig. 1, while \texttt{r} represents the measured points. The lines represent the flux emitting from the sources and fluxes. The total number of flux lines depends on the strength of the light source and is constant with increasing distance, where a greater density of flux lines (lines per unit area) means a stronger energy field. The density of flux lines is inversely proportional to the square of the distance from the source because the surface area of a sphere increases with the square of the radius. Thus, the intensity of light from a point source (energy per unit of area perpendicular to the source) is inversely proportional to the square of the distance from the source, so an object twice as far away receives only one-quarter the energy (in the same time period).
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Images/pointLight.png}
-    \caption[Caption used in list of tables]{how a point light propagates}
-    \label{fig:flow around cylinder}
-    \source{https://en.wikipedia.org/wiki/Inverse-square_law}
-\end{figure}
+$$ \frac{intensity_1}{intensity_2} = \frac{distance_1^2}{distance_2^2} $$
+To show this property, imagine a point light, like `S` in Fig. 1, while `r` represents the measured points. The lines represent the flux emitting from the sources and fluxes. The total number of flux lines depends on the strength of the light source and is constant with increasing distance, where a greater density of flux lines (lines per unit area) means a stronger energy field. The density of flux lines is inversely proportional to the square of the distance from the source because the surface area of a sphere increases with the square of the radius. Thus, the intensity of light from a point source (energy per unit of area perpendicular to the source) is inversely proportional to the square of the distance from the source, so an object twice as far away receives only one-quarter the energy (in the same time period).
+<center><img src="./Images/pointLight.png" class="bg-primary mb-3"></center><br>
 However, in computer graphics things are a little problem. As distance approaches zero, lighting intensity approaches infinity. To address this issue,there are several way but \texttt{Standard Unity rendering pipeline} uses a \texttt{fake falloff curve} derived from the following equation:
  \begin{equation}
     \frac{1}{((\frac{x}{r}) . 5)^2 + 1 } 
