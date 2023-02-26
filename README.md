@@ -21,7 +21,7 @@ Since it is supposed to show `heatmap` on a specific point in the scene, we can 
 <p align="center">
 <img src="./Images/sunPosition.png">
 </p>
-To implement sun rising and sun setting for `Alesund`, a `directional lighting` element has been used. To calculate the exact position of `sun` for a city, we need three parameters, including `GPS coordinate`, `time zone` and `time`. Based on these parameters, two angles shown the position of sun at that specific time is derived. These angles are called `azimuth` and `elevation`. The position of sun for `Alesund` on 12 April 2022 was extracted from \textit{www.SunEarthTools.com} website.
+To implement sun rising and sun setting for `Alesund`, a `directional lighting` element has been used. To calculate the exact position of `sun` for a city, we need three parameters, including `GPS coordinate`, `time zone` and `time`. Based on these parameters, two angles shown the position of sun at that specific time is derived. These angles are called `azimuth` and `elevation`. The position of sun for `Alesund` on 12 April 2022 was extracted from www.SunEarthTools.com website.
 <p align="center">
 <img src="./Images/Untitled.png">
 </p>
