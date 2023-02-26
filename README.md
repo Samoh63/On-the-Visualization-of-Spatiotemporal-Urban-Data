@@ -43,7 +43,7 @@ $$ Intensity\ in\ a\ point = \frac{(\frac{intensity_{1}}{x_{1}^2}+\frac{intensit
 
 n= 1, 2, ..., n show the number of light and min and max illustrate the maximum and minimum values of accumulated light intensity of points used for normalizing values. The code is written for this part is shown in the following figure.    
 
-```
+```batch
 foreach (barList item in cylinderGroup)
         {
 
@@ -158,10 +158,10 @@ After adding the lights by clicking on any point we want, Fig. 7,  or importing 
 
 Figure 9 illustrate the heat map in a selected point. Given the sun and light intensity, the heat map can be calculated. As can be seen in the bottom of floating side bar, the dimensions of heat map can be changed to cover a bigger area.
 <p align="center">
-<img src="./Images/Heatmap.jpg">
+<img src="./Images/Heatmap.png">
 </p>
 
 The effect of light intensity on heat maps is show in Fig. 10. It can be seen that points with shorter distances from both street lights receive higher intensity compared to points with more distance.
 <p align="center">
-<img src="./Images/Heatmap_light.jpg">
+<img src="./Images/Heatmap_light.png">
 </p>
