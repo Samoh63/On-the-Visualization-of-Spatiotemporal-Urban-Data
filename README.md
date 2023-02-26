@@ -3,9 +3,8 @@
 ## Theory
 
 In science, an inverse-square law is any scientific law stating that a specified physical quantity is inversely proportional to the square of the distance from the source of that physical quantity. In mathematical notation the inverse square law can be expressed as an intensity (I) varying as a function of distance (d) from some centre. The intensity is proportional to the multiplicative inverse of the square of the distance thus:
-
-$$ \cos (2\theta) = \cos^2 \theta - \sin^2 \theta $$
-$$ {intensity} \propto \frac{1}{distance^2} $$
+ 
+$$ intensity \propto \frac{1}{distance^2} $$
 
 It can also be mathematically expressed as:
 \begin{equation}
