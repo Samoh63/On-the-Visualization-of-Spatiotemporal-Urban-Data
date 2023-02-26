@@ -14,6 +14,7 @@ To show this property, imagine a point light, like `S` in Fig. 1, while `r` repr
 <p align="center">
 <img  src="./Images/pointLight.png">
 </p>
+
 However, in computer graphics things are a little problem. As distance approaches zero, lighting intensity approaches infinity. To address this issue,there are several way but `Standard Unity rendering pipeline` uses a `fake falloff curve` derived from the following equation:
 
 $$ \frac{1}{((\frac{x}{r}) . 5)^2 + 1 } $$
