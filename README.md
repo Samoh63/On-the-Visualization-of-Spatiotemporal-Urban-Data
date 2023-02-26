@@ -1,10 +1,11 @@
 # On-the-Visualization-of-Spatiotemporal-Urban-Data
-\section{Theory}
+
+## Theory
 
 In science, an inverse-square law is any scientific law stating that a specified physical quantity is inversely proportional to the square of the distance from the source of that physical quantity. In mathematical notation the inverse square law can be expressed as an intensity (I) varying as a function of distance (d) from some centre. The intensity is proportional to the multiplicative inverse of the square of the distance thus:
-\begin{equation}
-    {intensity} \propto \frac{1}{distance^2} 
-\end{equation}
+
+    $${intensity} \propto \frac{1}{distance^2}$$
+
 It can also be mathematically expressed as:
 \begin{equation}
     \frac{intensity_1}{intensity_2} = \frac{distance_1^2}{distance_2^2} 
